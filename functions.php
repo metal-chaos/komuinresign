@@ -78,6 +78,7 @@ if (!is_admin()) {
 			wp_register_script( 'wow', get_bloginfo('template_directory'). '/library/js/libs/wow.min.js', array('jquery'), '', true );
 		}
 		wp_register_script( 'main-js', get_bloginfo('template_directory'). '/library/js/scripts.js', array( 'jquery' ), '', true );
+		wp_register_script( 'glitch', get_bloginfo('template_directory'). '/library/js/imagesloaded.pkgd.min.js', array(), '', true );
 	}
 	function add_script() {
 		register_script();
@@ -89,6 +90,7 @@ if (!is_admin()) {
 			wp_enqueue_script( 'imagesloaded' );
 			wp_enqueue_script( 'main-js' );
 			wp_enqueue_script( 'css-modernizr' );
+			wp_enqueue_script( 'glitch' );
 		if(is_front_page() || is_home()) {
 		}
 		else {

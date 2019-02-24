@@ -65,7 +65,21 @@ endif;?>
 
 <?php if ( has_post_thumbnail() && !get_option( 'post_options_eyecatch' ) ) :?>
 <figure class="eyecatch">
+<div class="demo-2 loading">
 <?php the_post_thumbnail(); ?>
+<div class="glitch__img">
+<?php the_post_thumbnail(); ?>
+</div>
+<div class="glitch__img">
+<?php the_post_thumbnail(); ?>
+</div>
+<div class="glitch__img">
+<?php the_post_thumbnail(); ?>
+</div>
+<div class="glitch__img">
+<?php the_post_thumbnail(); ?>
+</div>
+</div>
 </figure>
 <?php endif; ?>
 <?php if ( !get_option( 'sns_options_hide' ) ) : ?>
